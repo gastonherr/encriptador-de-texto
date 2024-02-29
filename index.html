@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+    <title>Prueba con grid</title>
+</head>
+
+<body>
+    <div class="caja-principal">
+        <header class="header">
+            <img class="img-logo" src="img/logo.png" alt="Imagen del logo">
+            <p class="enc">Encriptador de texto</p>
+        </header>
+
+
+        <div class="sec-1">
+            <textarea class="cuadro-input" name="" cols="30" rows="10" id="input"
+                placeholder="Ingrese el texto aqui.."></textarea>
+        </div>
+
+
+        <div class="sec-2">
+            <img class="muñeco" src="img/Muñeco.png" alt="Muñeco">
+            <textarea class="cuadro-resultado" name="Resultado" id="resultado" cols="30" rows="10"></textarea>
+           
+            
+        </div>
+
+
+        <div class="botones">
+            <button class="boton-encriptar" type="button" id="botonEncriptar">Encriptar</button>
+            <button class="boton-desencriptar" type="button" id="botonDesencriptar">Desencriptar</button>
+            <button class="boton-copiar" type="button" id="botonCopiar">Copiar</button>
+        </div>
+    </div>
+</body>
+
+<script>
+    let boton1 = document.querySelector("#botonEncriptar");
+    boton1.onclick = encriptar;
+
+    let boton2 = document.querySelector("#botonDesencriptar");
+    boton2.onclick = desencriptar;
+
+    let boton3 = document.querySelector("#botonCopiar");
+    boton3.onclick = copiar;
+
+
+</script>
+
+</html>
